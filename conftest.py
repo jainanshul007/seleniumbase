@@ -27,6 +27,7 @@ def init_driver(request , pytestconfig):
 def env(pytestconfig):
     return pytestconfig.getoption("env")
 
+# New fixture
 @pytest.fixture()
 def app_url(env):
 
